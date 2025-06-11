@@ -11,7 +11,7 @@ pipeline{
 
         stage('checkout the repo'){
             steps{
-                git branch: 'main', credentialsId: 'github_cred', url: 'https://github.com/abd0hrz/infra-cicd-pipeline-aws-k8s-gitops'
+                git branch: 'main', credentialsId: 'github_cred', url: 'https://github.com/abd0hrz/infra-cicd-pipeline-aws-k8s-gitops.git'
             }
         }
         stage('initialize terraform '){
