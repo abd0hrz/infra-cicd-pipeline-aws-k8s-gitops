@@ -107,7 +107,3 @@ Welcome to my DevOps project repository! this project automates AWS service and 
 ![yalla](assets/i9.png)
 #### Here you can look at the lock of the certificate
 ![yallla22](assets/i10.png)
-
-## 🎉 Conclusion
-
-This project demonstrates a complete DevOps pipeline for provisioning infrastructure, building and pushing Docker images and deploying applications on AWS EKS. Feel free to explore and adapt the code to fit your specific requirements.
