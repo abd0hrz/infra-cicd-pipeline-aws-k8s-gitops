@@ -29,7 +29,7 @@ pipeline{
                          git config --global user.email balloabdelrhman@gmail.com
                          git add .
                          git commit -am "update the helm chart values file"
-                         git push https://github.com/abd0hrz/infra-cicd-pipeline-aws-k8s-gitops main
+                         git push https://github.com/abd0hrz/infra-cicd-pipeline-aws-k8s-gitops.git main
                         """
                      }
                 }
