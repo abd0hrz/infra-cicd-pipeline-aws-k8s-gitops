@@ -16,7 +16,7 @@ spec:
     spec:
       containers:
       - name: devops-task
-        image: abd0hrz
+        image: abd0hrz/balloo
         ports:
         - containerPort: 4444
         resources:
