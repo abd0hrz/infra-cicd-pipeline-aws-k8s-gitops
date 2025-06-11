@@ -1,9 +1,4 @@
-<div align="center">
-  <h1 style="color: red;">Advanced DevOps project :globe_with_meridians::hammer_and_wrench:</h1>
-</div> 
-
-
-# 🚀 DevOps Project
+# 🚀 DevOps Infrastructure & Deployment Automation
 
 Welcome to my DevOps project repository! this project automates AWS service and K8S resources provisioning via Terraform, Jenkins orchestrates three pipelines, the first is to automate the Provisioning of the infrastructure, and the second is to dockerize the Node.js app and push it to private repo ECR and then trigger the third pipeline (CD pipeline), third pipeline to update the image name in Helm chart values.yaml. The Node.js app effortlessly communicates with RDS and the APP stores the IP when you hit a certain endpoint and lists all the IPs stored when you hit  another endpoint, ArgoCD adds the final touch, enabling continuous deployment with GitOps principles.
 
@@ -114,7 +109,6 @@ Welcome to my DevOps project repository! this project automates AWS service and 
 ![yallla2](https://github.com/AbdelrhmanAli123/advanced-devops-task/assets/133269614/529d1616-9148-4c35-9c7f-fb175a5c8ad2)
 #### Here you can look at the lock of the certificate
 ![yallla22](https://github.com/AbdelrhmanAli123/advanced-devops-task/assets/133269614/b1687a26-9740-4fa7-8d91-46bf0d2712ee)
-
 
 ## 🎉 Conclusion
 
