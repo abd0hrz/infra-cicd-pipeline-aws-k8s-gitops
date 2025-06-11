@@ -3,8 +3,7 @@
 Welcome to my DevOps project repository! this project automates AWS service and K8S resources provisioning via Terraform, Jenkins orchestrates three pipelines, the first is to automate the Provisioning of the infrastructure, and the second is to dockerize the Node.js app and push it to private repo ECR and then trigger the third pipeline (CD pipeline), third pipeline to update the image name in Helm chart values.yaml. The Node.js app effortlessly communicates with RDS and the APP stores the IP when you hit a certain endpoint and lists all the IPs stored when you hit  another endpoint, ArgoCD adds the final touch, enabling continuous deployment with GitOps principles.
 
 ##  Project Design
-
-![devops-task](https://github.com/AbdelrhmanAli123/advanced-devops-task/assets/133269614/3948183e-9730-411a-b9a3-0b0ebc302fc3)
+![devops-task](assets/i1.png)
 
 ## :gear: Tools & Operators :
 - Docker
@@ -65,10 +64,10 @@ Welcome to my DevOps project repository! this project automates AWS service and 
 ### 6. automate infra using Jenkins
 - now we have to create a parameterized pipeline for automating the infrastructure creation
 - in my case, I used two options as a parameters --> (apply & destroy)
-- ![parm-terr](https://github.com/AbdelrhmanAli123/advanced-devops-task/assets/133269614/50021f0b-e792-48ee-861a-16b3a75594bd)
+- ![parm-terr](assets/i2.png)
 - Jenkins file existed under `jenkins_files` directory
 - note: don't forget to add your aws credential --> aws access and secret access key
-  ![terraform-jenkins](https://github.com/AbdelrhmanAli123/advanced-devops-task/assets/133269614/53bbe809-a02b-4b1a-9eba-e370eea9395e)
+  ![terraform-jenkins](assets/i3.png)
 
 ### 7. Automate build, push, and trigger the CD pipeline
 - now we need to create a CI pipeline
@@ -77,7 +76,7 @@ Welcome to my DevOps project repository! this project automates AWS service and 
 - push the image to the ECR
 - trigger the CD pipeline and send the image version as a parameter to the CD pipeline
 - Jenkins file existed under `jenkins_files` directory
-![ci-pipe](https://github.com/AbdelrhmanAli123/advanced-devops-task/assets/133269614/35ed99d9-06b0-4982-8991-18fa52972326)
+![ci-pipe](assets/i4.png)
 
 ### 8. CD pipeline
 - now we should create the CD pipeline
@@ -85,7 +84,7 @@ Welcome to my DevOps project repository! this project automates AWS service and 
 - update the HELM chart values.yaml with the image name that we get as a parameter from the CI pipeline
 - push the changes to the same repo again
 - - Jenkins file existed under `jenkins_files` directory
-  ![CD-PIPE](https://github.com/AbdelrhmanAli123/advanced-devops-task/assets/133269614/a0d252ab-c30c-43b1-9d7a-2d26e7a61887)
+  ![CD-PIPE](assets/i5.png)
 
 ### 9. argocd and continuous deployment
 - in this step we need to connect or sync argocd with the repo
@@ -98,17 +97,16 @@ Welcome to my DevOps project repository! this project automates AWS service and 
     - 2- using a declarative way
     - 3- using the UI which is the way I used in this project
 - add your repo to argocd repos
-![Capture](https://github.com/AbdelrhmanAli123/advanced-devops-task/assets/133269614/e3100651-732f-4152-bc89-9b0016d3ab1d)
+![Capture](assets/i6.png)
 - create application 
-![Capture2](https://github.com/AbdelrhmanAli123/advanced-devops-task/assets/133269614/c6cf61f2-2b49-4d38-b347-3270e832ad8a)
-![Capture3](https://github.com/AbdelrhmanAli123/advanced-devops-task/assets/133269614/00d42ebe-66df-420b-a0ae-2061d9d42307)
+![Capture2](assets/i7.png)
+![Capture3](assets/i8.png)
 
 
 #### Now let's try the app
-![yalla](https://github.com/AbdelrhmanAli123/advanced-devops-task/assets/133269614/e37df0f3-44c9-454d-9bb8-f5d60c69fb94)
-![yallla2](https://github.com/AbdelrhmanAli123/advanced-devops-task/assets/133269614/529d1616-9148-4c35-9c7f-fb175a5c8ad2)
+![yalla](assets/i9.png)
 #### Here you can look at the lock of the certificate
-![yallla22](https://github.com/AbdelrhmanAli123/advanced-devops-task/assets/133269614/b1687a26-9740-4fa7-8d91-46bf0d2712ee)
+![yallla22](assets/i10.png)
 
 ## 🎉 Conclusion
 
